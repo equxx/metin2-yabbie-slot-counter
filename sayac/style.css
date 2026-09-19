@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: transparent !important;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    overflow: hidden;
+}
+
+/* İkonun Duracağı Yeni Alan */
+.logo-container {
+    margin-right: 20px; /* Kutu ile görsel arasındaki boşluk */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Metin2 Yabbie Görselinin Boyut Ayarı */
+.yabbie-img {
+    height: 94px; /* Kutunun boyutuyla tam eşit hizalanması için */
+    width: auto;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.8)); /* Oyundaki gibi gölgeli ve parıltılı durması için */
+    object-fit: contain;
+}
+
+/* 3 Bölmeli Beyaz Çerçeve Kutusu */
+.counter-container {
+    display: flex;
+    gap: 5px;
+    background-color: white !important;
+    padding: 5px;
+    border-radius: 2px;
+    width: 164px;
+    height: 94px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.digit-window {
+    width: 48px;
+    height: 84px;
+    background-color: #1a1a1a !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.digit-strip {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    top: 0;
+    left: 0;
+}
+
+.digit {
+    height: 84px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
